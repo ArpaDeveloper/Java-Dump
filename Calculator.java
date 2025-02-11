@@ -35,7 +35,6 @@ public class Calculator {
         //Lets make copy to not change the order
         ArrayList<Grade> sortedstudies = new ArrayList<>(studies);
 
-        //The collections was ChatGPT idea that I implemented by the help of ChatGPT
         Collections.sort(sortedstudies, (g1, g2) -> Integer.compare(g1.getGrade(), g2.getGrade()));
         int size = sortedstudies.size();
 
