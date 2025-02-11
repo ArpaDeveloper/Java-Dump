@@ -13,18 +13,15 @@ public class University {
     //Serial version UID for ensuring compability (I guess this is used for filehandling)
     private static final long serialVersionUID = 1L;
     
-    //This was ChatGPT part. (The ArrayList were a bit of a problem for me)
     public University(ArrayList<Student> students){
         this.students = students;
     }
-    //ChatGPT part ends.
 
     public void addStudent(String s_name, String s_number) {
         Student student = new Student(s_name, s_number);  
         students.add(student);  
     }
 
-    //This part was from ChatGPT (way to get students, couldn't figure out how the Arraylist works here)
     public ArrayList<Student> getStudent(){
         return students;
     }
@@ -53,9 +50,7 @@ public class University {
     }
     return -1;  
     }
-    //ChatGPT part ends
 
-    //I used youtube tutorial+ChatGpt+Slides to make the file handling
     public static void saveFile(ArrayList<Student> students, String filename){
         try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))){
             oos.writeObject(students);
