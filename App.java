@@ -16,10 +16,8 @@ public class App
     public static void main( String[] args )
     {
         Scanner sc = new Scanner(System.in);
-        //ChatGPT part
         ArrayList<Student> students = new ArrayList<>();
         University uni = new University(students);
-        //ChatGPT part ends
         Calculator calculator = new Calculator();
 
         String menutext = "1) Add student, 2) List students, 3) Add course completion for student, "
@@ -57,7 +55,6 @@ public class App
                    
                     try{ //Error catching if user puts non-int in student.index
                         s_index = Integer.parseInt(sc.nextLine());
-                        //I used ChatGPT to help me with the index stuff
                         if (s_index >= 0 && s_index < uni.getStudent().size()) { 
                             break;  
                         } else {
