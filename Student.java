@@ -37,11 +37,9 @@ public class Student implements Serializable{
         }
     }
     
-    //This part was from ChatGPT (way to get grades, couldn't figure out how the Arraylist works here)
     public ArrayList<Grade> getGrades(){
         return studies;
     }
-    //ChatGPT part ends
 
     //Getters
     public String getName(){
