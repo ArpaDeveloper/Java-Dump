@@ -83,7 +83,7 @@ public class App
                 case "3": //Drive Cars
                     for (Vehicle vehicle : vehicles) {
                         if (vehicle instanceof Car) {
-                            car = (Car) vehicle; //ChatGpt line
+                            car = (Car) vehicle; 
                             car.drive();
                         }
                     }
@@ -92,7 +92,7 @@ public class App
                 case "4": //Fly Planes
                     for (Vehicle vehicle : vehicles) {
                         if (vehicle instanceof Plane) {
-                            plane = (Plane) vehicle; //ChatGpt line
+                            plane = (Plane) vehicle; 
                             plane.fly();
                         }
                     }
@@ -101,7 +101,7 @@ public class App
                 case "5": //Sail the Ships
                     for (Vehicle vehicle : vehicles) {
                         if (vehicle instanceof Ship) {
-                            ship = (Ship) vehicle; //ChatGpt line
+                            ship = (Ship) vehicle;
                             ship.sail();
                         }
                     }
